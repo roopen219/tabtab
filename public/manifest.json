@@ -1,0 +1,26 @@
+{
+  "name": "tabtab",
+  "description": "A simple Chrome extension to manage and save tabs. Workona like tab manager.",
+  "manifest_version": 3,
+  "version": "0.0.1",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {},
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "permissions": ["cookies", "tabs", "storage"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

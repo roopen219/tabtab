@@ -40,7 +40,7 @@
     "lint-staged": "9.5.0",
     "prettier": "2.4.1",
     "sass": "1.42.1",
-    "sass-loader": "12.1.0",
+    "sass-loader": "10.2.0",
     "typescript": "4.4.3"
   },
   "gitHooks": {
@@ -51,5 +51,10 @@
       "vue-cli-service lint",
       "git add"
     ]
+  },
+  "prettier": {
+    "singleQuote": true,
+    "tabWidth": 2,
+    "semi": true
   }
 }
